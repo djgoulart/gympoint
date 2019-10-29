@@ -5,7 +5,7 @@
   "author": "Diego Goulart <diegogoulart.aws@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/server.js",
+    "dev": "nodemon --delay 1500ms src/server.js",
     "dev:debug": "nodemon --inspect src/server.js"
   },
   "dependencies": {
