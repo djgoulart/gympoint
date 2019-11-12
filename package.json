@@ -6,13 +6,19 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon --delay 1500ms src/server.js",
-    "dev:debug": "nodemon --inspect src/server.js"
+    "dev:debug": "nodemon --inspect src/server.js",
+    "queue": "nodemon src/queue.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "bee-queue": "^1.2.2",
     "chance": "^1.1.3",
+    "date-fns": "^2.6.0",
     "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
     "jsonwebtoken": "^8.5.1",
+    "nodemailer": "^6.3.1",
+    "nodemailer-express-handlebars": "^3.1.0",
     "pg": "^7.12.1",
     "pg-hstore": "^2.3.3",
     "sequelize": "^5.21.1",
@@ -24,6 +30,7 @@
     "eslint-config-prettier": "^6.4.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.1",
+    "kill-port": "^1.6.0",
     "nodemon": "^1.19.4",
     "prettier": "^1.18.2",
     "sequelize-cli": "^5.5.1",
